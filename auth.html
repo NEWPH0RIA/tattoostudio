@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div class="header-info">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="web/css/reg.css">
+    </div>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="web/img/logo.svg" class="logo" alt="лого"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#block2">О нас</a></li>
+                <li><a href="index.html#block3">Мастера</a></li>
+                <li><a href="index.html#block4">Услуги</a></li>
+                <li><a href="index.html#block5">Контакты</a></li>
+            </ul>
+        </nav>
+        <img src="web/img/User.svg" class="user-icon" alt="профиль">
+        
+    </header>
+
+    <main>
+        <div class="authreg-banner">
+            <div class="auth-block-background">
+                <div class="auth-block-text">
+                    <div class="auth-title">
+                        Авторизация
+                    </div>
+                    <div class="authlogin">
+                        <form action="/submit-form" method="post" class="auth-logpass">
+                            <div class="auth-login-block">
+                                <input type="text" id="username" name="username" value="" class="auth-log"
+                                    placeholder="Логин"><br>
+                            </div>
+                            <div class="auth-password-block">
+                                <input type="password" id="password" name="password" class="auth-pass"
+                                    placeholder="Пароль"><br>
+                            </div>
+
+                            <div class="auth-password-repeat">
+                                <input type="password" id="password-repeat" name="password-repeat"
+                                    class="auth-pass-repeat" placeholder="Повторите пароль"><br>
+                            </div>
+                            <div class="error">
+
+                            </div>
+                        </form>
+                        <div class="sign-in-div">
+                            <input class="auth-sign-in" type="button" value="Войти" />
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="block-0">
+            <div class="footer-block" id="block5">
+                <div class="map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abd366510972760cdc8eda61aa046eb250c5478634d28e28c549b852109307a24&amp;source=constructor"
+                        width="783" height="412" frameborder="0" style="border: 0px; border-radius: 56px;"></iframe>
+                </div>
+                <div class="footer-text">
+                    <div class="contacts-title">Контакты</div>
+                    <div class="contacts">
+                        <div>+(965) 786 40 90</div>
+                        <div>tattscult@gmail.com </div>
+
+                    </div>
+                    <div class="adress">
+                        <div>Санкт-Петербург, улица Александра Невского, 6</div>
+                        <div> Метро площадь Александра Невского-1</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="prava">Все права защищены Tattscult © 2025</div>
+    </footer>
+    <script src="passcheck.js"></script>
+</body>
+
+</html>

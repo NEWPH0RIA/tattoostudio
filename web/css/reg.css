@@ -1,0 +1,343 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(228, 227, 225, 0.1);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-family: 'Neris';
+    z-index: 999;
+    list-style: none;
+    cursor: pointer;
+   
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neris';
+    font-size: 24px;
+    margin: 20px;
+    list-style: none;
+    gap: 100px;
+    color: black;
+    mix-blend-mode: difference;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.user-icon {
+    width: 44px;
+    padding-right: 60px;
+}
+
+.logo {
+    width: 60px;
+    padding-left: 60px;
+    padding-block: 15px;
+}
+
+main {
+    background-image: url("../img/authregBackground.png");
+    height: 980px;
+    background-size: cover;
+   
+    gap: 650px;
+    color: rgb(0, 0, 0);
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -60px
+}
+
+.auth-block-background {
+    height: 574px;
+    width: 447px;
+ 
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.auth-block-text {
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.auth-title {
+    padding-top: 45px;
+    font-size: 36px;
+    color: black;
+    padding-bottom: 60px;
+    font-family: 'Anticva';
+    padding-top: 65px;
+}
+
+.auth-login {
+    padding-top: 119px;
+    font-size: 24px;
+    color: darkgray;
+    display: flex;
+    align-items: left;
+    padding-left: 100px;
+}
+
+.auth-password {
+    padding-top: 107px;
+    font-size: 24px;
+    color: darkgray;
+    display: flex;
+    align-items: left;
+    padding-left: 100px;
+}
+
+.authlogin {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.password-repeat {
+    font-size: 24px;
+    color: darkgray;
+    display: flex;
+    align-items: left;
+    padding-left: 100px;
+}
+
+
+
+.sign-in-div {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    
+    
+}
+
+.sign-in {
+    font-family: 'Neris';
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border-color: #BDBDBD;
+    border: none;
+    width: 200px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BDBDBD;
+    color: black;
+    transition: background-color 0.3s ease;
+
+}
+
+.sign-in:hover{
+    background-color: #282828;
+    color: #BDBDBD;
+}
+
+.auth-sign-in {
+    font-family: 'Neris';
+    font-size: 24px;
+    color: black;
+    border-radius: 10px;
+    border-color: #BDBDBD;
+    background-color: #BDBDBD;
+    border: none;
+    width: 200px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.auth-sign-in:hover{
+    background-color: #282828;
+    color: #BDBDBD;
+}
+
+.block-0 {
+    height: 100px;
+    background-color: #282828;
+    position: relative;
+    top: -100px;
+
+}
+
+
+footer {
+    height: 400px;
+    background-color: #282828;
+
+
+}
+
+.log {
+    border: none;
+    border-bottom: 1px solid #282828;
+    background: transparent;
+    width: 60%;
+    font-size: 24px;
+    outline: none;
+    font-family: 'Neris';
+}
+
+.pass {
+    border: none;
+    border-bottom: 1px solid #282828;
+    background: transparent;
+    width: 60%;
+    font-size: 24px;
+    outline: none;
+    font-family: 'Neris';
+    margin-bottom: 70px;
+}
+
+.link{
+    font-family: 'Neris';
+    font-size: 14px;
+    color: #282828;
+}
+
+.auth-pass-repeat{
+    border: none;
+    border-bottom: 1px solid #282828;
+    background: transparent;
+    width: 60%;
+    font-size: 24px;
+    outline: none;
+    font-family: 'Neris';
+    margin-bottom: 60px;
+}
+
+
+.logpass-text {
+    font-size: 24px;
+    padding-right: 150px;
+    color: #BDBDBD;
+}
+
+.login-block {
+    padding-bottom: 50px;
+}
+
+.reg-title{
+    padding-bottom: 100px;
+    font-family: 'Anticva';
+    padding-top: 65px;
+    font-size: 36px;
+}
+
+.auth-log {
+    border: none;
+    border-bottom: 1px solid #282828;
+    background: transparent;
+    width: 60%;
+    font-size: 24px;
+    outline: none;
+    font-family: 'Neris';
+}
+
+.auth-pass {
+    border: none;
+    border-bottom: 1px solid #282828;
+    background: transparent;
+    width: 60%;
+    font-size: 24px;
+    outline: none;
+    font-family: 'Neris';
+}
+
+.auth-login-block {
+    padding-bottom: 50px;
+}
+.auth-password-block{
+    padding-bottom: 50px;
+}
+
+footer{
+    height: 500px;
+    background-color: #282828;
+} 
+
+.footer-block{
+    display: flex;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.map{
+    padding-top: 38px;
+    padding-left: 162px;
+}
+
+.contacts{
+    font-family: 'Neris';
+    font-size: 32px;
+    color: white;
+    
+}
+
+.contacts-title{
+    font-family: 'Neris';
+    font-size: 32px;
+    color: white;
+}
+
+.adress{
+    font-family: 'Neris';
+    font-size: 24px;
+    color: white;
+    padding-top: 20px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+   padding-top: 30px;
+   text-align: center;
+}
+
+.contacts-title{
+    padding-bottom: 30px;
+    font-family: 'Anticva-Regular';
+}
+
+.prava{
+    font-family: 'Neris';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.466);
+    text-align: center;
+    padding-top: 13px;
+}
+
+.error{
+    position: relative;
+    top: -50px;
+    font-family: "Neris";
+}

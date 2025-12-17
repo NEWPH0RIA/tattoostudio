@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <div class="header-info">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="web/css/order.css">
+    </div>
+</head>
+
+<body>
+     <header>
+        <a href="index.html"><img src="web/img/logo.svg" class="logo" alt="лого"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#block2">О нас</a></li>
+                <li><a href="index.html#block3">Мастера</a></li>
+                <li><a href="index.html#block4">Услуги</a></li>
+                <li><a href="index.html#block5">Контакты</a></li>
+            </ul>
+        </nav>
+        <img src="web/img/User.svg" class="user-icon" alt="профиль">
+    </header>
+    <main>
+        <div class="booking-container">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step1" checked>
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step2">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step3">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step4">
+            <div class="booking-window" id="window1">
+                <div class="booking-window-content">
+                    
+                    <div class="booking-steps">
+                        <label for="window-step2" class="booking-step">
+                            <div class="step-text">Выберите услугу</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                        <label for="window-step3" class="booking-step">
+                            <div class="step-text">Выберите мастера</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                        <label for="window-step4" class="booking-step">
+                            <div class="step-text">Выберите дату и время</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-window" id="window2">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите услугу</div>
+
+                    <div class="accordion accordion-flush custom-accordion" id="servicesAccordion">
+                        <div class="accordion-item">
+                            
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Консультация</div>
+                                            
+                                        </div>
+                                        <div class="service-price">Бесплатно</div>
+                                        <input type="radio" name="service" id="service11">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Татуировка</div>
+                                            
+                                        </div>
+                                        <div class="service-price">от 3000 ₽</div>
+                                        <input type="radio" name="service" id="service12">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Перекрытие</div>
+                                            
+                                        </div>
+                                        <div class="service-price">от 4000 ₽</div>
+                                        <input type="radio" name="service" id="service13">
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <label for="window-step3" class="booking-button">Далее</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-window" id="window3">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите мастера</div>
+
+                    <div class="masters-list">
+                        <label class="master-item">
+                            
+                            <div class="master-name">Мастер Алёна</div>
+                            <input type="radio" name="master" id="master1">
+                        </label>
+
+                        <label class="master-item">
+                            
+                            <div class="master-name">Мастер Виталий</div>
+                            <input type="radio" name="master" id="master2">
+                        </label>
+
+                        <label class="master-item">
+                            
+                            <div class="master-name">Мастер Александра</div>
+                            <input type="radio" name="master" id="master3">
+                        </label>
+
+                        
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <label for="window-step4" class="booking-button">Далее</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-window" id="window4">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите дату и время</div>
+
+                    <div class="calendar-container">
+                        <div class="calendar-month">
+                            <div class="calendar-header">
+                                <div class="calendar-month-name">Январь 2026</div>
+                            </div>
+
+                            <div class="calendar-weekdays">
+                                <div>Пн</div>
+                                <div>Вт</div>
+                                <div>Ср</div>
+                                <div>Чт</div>
+                                <div>Пт</div>
+                                <div>Сб</div>
+                                <div>Вс</div>
+                            </div>
+
+                            <div class="calendar-days">
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>1</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>2</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>3</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>4</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>5</div>
+                                </label>
+                                <label class="calendar-day weekend">
+                                    <input type="radio" name="booking-date">
+                                    <div>6</div>
+                                </label>
+                                <label class="calendar-day weekend">
+                                    <input type="radio" name="booking-date">
+                                    <div>7</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>8</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>9</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>10</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>11</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>12</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>13</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>14</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>15</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>17</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>18</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>19</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>20</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>21</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>22</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>23</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>24</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>25</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>26</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>27</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>28</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>29</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>30</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>31</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="time-selection">
+                            <div class="time-slots">
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-10">
+                                    <div>10:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-11">
+                                    <div>11:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-12">
+                                    <div>12:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-13">
+                                    <div>13:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-14">
+                                    <div>14:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-15">
+                                    <div>15:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-16">
+                                    <div>16:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-17">
+                                    <div>17:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-18">
+                                    <div>18:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-19">
+                                    <div>19:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-20">
+                                    <div>20:00</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <button type="button" class="booking-button" id="bookButton">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-modal" id="errorModal">
+            <div class="booking-modal-content">
+                <div class="booking-modal-title">Заполните все поля</div>
+                <div class="booking-modal-text">Пожалуйста, заполните все поля!</div>
+                <div class="booking-modal-buttons">
+                    <button class="booking-modal-button confirm" id="closeError">ОК</button>
+                </div>
+            </div>
+        </div>
+        <div class="booking-modal" id="bookingModal">
+            <div class="booking-modal-content">
+                <div class="booking-modal-title">Запись подтверждена!</div>
+                <div class="booking-modal-text">Вы успешно записались!</div>
+                <div class="booking-modal-buttons">
+                    <button class="booking-modal-button confirm" id="confirmBooking">В профиль</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="web/js/order.js"></script>
+
+    <div class="block-0"></div>
+</body>
+
+</html>

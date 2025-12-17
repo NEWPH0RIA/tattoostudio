@@ -1,0 +1,433 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(228, 227, 225, 0.1);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-family: 'Neris';
+    z-index: 999;
+    list-style: none;
+    cursor:pointer;
+}
+
+
+.user-icon{
+    width: 44px;
+    padding-right: 60px;
+}
+
+.logo{
+    width: 60px;
+    padding-left: 60px;
+    padding-block: 15px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neris';
+    font-size: 24px;
+    margin: 20px;
+    list-style: none;
+    gap: 100px;
+    color: black;
+    mix-blend-mode: difference;
+    align-items: center;  
+}
+
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    margin: 0;
+    background-color: #E4E3E1;
+}
+
+p {
+    margin: 0;
+}
+
+
+.bigFont {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anticva-Regular';
+    font-size: 80px;
+    align-items: center;
+}
+
+.smallFont {
+    font-family: 'Neris';
+    font-size: 32px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.first-block {
+    margin-bottom: 180px;
+    text-align: center;
+    margin-top: -600px;
+}
+
+.second-block {
+    text-align: center;
+}
+
+.about-us {
+    margin-bottom: 90px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anticva-Regular';
+    font-size: 64px;
+}
+
+.info {
+    font-family: 'Neris';
+    font-size: 32px;
+    margin-bottom: 150px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.our-masters {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anticva-Regular';
+    font-size: 64px;
+}
+
+.banner {
+    background-image: url("/web/img/back.png");
+    height: 2292px;
+    background-size: cover;
+    gap: 650px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#block1{
+    position:relative;
+    top: -350px;
+
+}
+
+#block2{
+    position:relative;
+    top: 250px;
+}
+
+#block3{
+    position:relative;
+    top:-5px;
+}
+
+#block4{
+    position:relative;
+    top: -80px;
+}
+
+
+.list {
+    font-family: 'Neris';
+    font-size: 24px;
+    margin: 20px;
+}
+
+.masters {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.master-name {
+    font-family: 'Neris';
+    font-size: 32px;
+    margin: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cart {
+    margin: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item{
+    height: auto;
+}
+
+
+
+@font-face {
+    font-family: 'Anticva-Regular';
+    src: url('../fonts/Anticva-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Neris';
+    src: url('../fonts/Neris.otf');
+}
+
+.portfolio-title{
+    padding-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anticva-Regular';
+    font-size: 64px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 3fr));
+    gap: 26px;
+    justify-content: center;
+    max-width: 1442px;
+
+
+}
+
+@media(max-width: 720px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+        gap: 26px;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    .item{
+        height: 350px;
+    }
+}
+
+.back{
+    margin-top: 100px;
+    background-image: url("/web/img/Rectangle\ 10.png");
+    height: 2292px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-text{
+    display: flex;
+    height: 182px;
+    color: white;
+    background-color: #282828;
+    justify-content: center;
+    font-family: 'Anticva-Regular';
+    font-size: 64px;
+    align-items: center;
+}
+
+
+
+
+
+.portfolio-style{
+    background: linear-gradient( to bottom, #EDEDEB, #FDFDFD);
+    padding-bottom: 60px;
+}
+
+.masters-style{
+    background: linear-gradient( to bottom, #E4E3E1 80%, #EDEDEB);
+}
+
+ .item:hover{
+    animation: item 0.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes item {
+
+    100%{
+        transform: scale(108%);
+    }
+    0%{
+        transform: scale(100%);
+    }
+}
+
+
+
+.services-title2{
+    font-family: 'Neris';
+    font-size: 55px;
+    text-align: right; 
+    padding-right: 170px;
+    margin: 0px 100px;
+}
+
+.services-info-text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 150px;
+    font-family: 'Neris';
+    font-size: 24px; 
+    text-align: right;
+    padding-right: 230px;
+}
+
+.services-text-block2{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.services-img2{
+    order: 2;
+}
+
+.services-info-right{
+    display: flex;
+}
+
+.services-block{
+    margin: 100px 300px;
+}
+
+.services-info{
+    display: flex;
+
+}
+
+.services-title1{
+    font-family: 'Neris';
+    font-size: 55px;
+    text-align: left; 
+    text-align: right; 
+    padding-right: 190px;
+    margin-right: 100px;
+}
+
+.services-text-block{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-info-text1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 150px;
+    font-family: 'Neris';
+    font-size: 24px;
+    max-width: 530px;
+
+}
+
+
+footer{
+    height: 500px;
+    background-color: #282828;
+} 
+
+.footer-block{
+    display: flex;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.map{
+    padding-top: 38px;
+    padding-left: 162px;
+}
+
+.contacts{
+    font-family: 'Neris';
+    font-size: 32px;
+    color: white;
+    
+}
+
+.contacts-title{
+    font-family: 'Neris';
+    font-size: 32px;
+    color: white;
+}
+
+.adress{
+    font-family: 'Neris';
+    font-size: 24px;
+    color: white;
+    padding-top: 20px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+   padding-top: 30px;
+   text-align: center;
+}
+
+.contacts-title{
+    padding-bottom: 30px;
+    font-family: 'Anticva-Regular';
+}
+
+.prava{
+    font-family: 'Neris';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.466);
+    text-align: center;
+    padding-top: 13px;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease;}

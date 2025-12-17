@@ -1,0 +1,423 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Neris';
+    src: url('../fonts/Neris.otf');
+}
+
+@font-face {
+    font-family: 'Anticva-Regular';
+    src: url('../fonts/Anticva-Regular.otf');
+}
+
+body {
+    font-family: 'Neris', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: url('../img/MacBook\ Air\ -\ 3\ \(2\).png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-color: #f5f5f5; 
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(228, 227, 225, 0.1);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-family: 'Neris';
+    z-index: 999;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neris';
+    font-size: 24px;
+    margin: 20px;
+    list-style: none;
+    gap: 100px;
+    color: black;
+    mix-blend-mode: difference;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.user-icon {
+    width: 44px;
+    margin-right: 60px;
+}
+
+.logo {
+    width: 60px;
+    margin-left: 60px;
+    margin-block: 15px;
+}
+
+
+.container {
+    max-width: 1400px; 
+    margin: 40px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    padding: 0 30px; 
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.left-column {
+    flex: 1;
+    min-width: 400px; 
+}
+
+.right-column {
+    flex: 1.5;
+    min-width: 500px; 
+}
+
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.578);
+    border-radius: 25px; 
+    padding: 40px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50%;
+}
+
+.profile-card:hover {
+    
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card2 {
+    background-color: rgba(40, 40, 40, 0.85);
+    border-radius: 25px; 
+    padding: 40px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px; 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 600px; 
+    margin-left: 130px;
+}
+
+.profile-card2:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    margin-right: 35px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info h2 {
+    color: #2d3748;
+    font-size: 2.2rem; 
+    margin-bottom: 20px;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    border-top: 2px solid rgba(226, 232, 240, 0.5);
+    padding-top: 20px;
+}
+
+.stat {
+    text-align: center;
+    margin-right: 40px; 
+}
+
+.stat-value {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.stat-label {
+    font-size: 1rem; 
+    color: #718096;
+}
+
+.booking-btn {
+    background-color: rgba(157, 157, 157, 0.9);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 22px 35px;
+    font-size: 1.4rem; 
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Neris';
+}
+
+.booking-btn:hover {
+    background-color: rgba(40, 40, 40, 0.9);
+    
+}
+
+.booking-btn i {
+    margin-right: 15px; 
+    font-size: 1.6rem; 
+}
+
+.appointments-list {
+    width: 100%;
+}
+
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.appointments-header h3 {
+    color: #ffffff;
+    font-size: 1.9rem;
+    font-family: 'Anticva-Regular';
+}
+
+.appointment-count {
+    background-color: rgba(157, 157, 157, 0.9);
+    color: white;
+    padding: 8px 20px; 
+    border-radius: 18px; 
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    font-size: 1.1rem; 
+}
+
+.appointment-item {
+    background-color: rgba(248, 249, 250, 0.9);
+    border-radius: 18px; 
+    padding: 25px; 
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 100px; 
+}
+
+.appointment-item:hover {
+    animation: item 0.7s forwards;
+    background-color: rgba(248, 249, 250, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes item {
+    100% {
+        transform: scale(1.05); 
+    }
+    0% {
+        transform: scale(1);
+    }
+}
+
+.appointment-info h4 {
+    color: #2d3748;
+    font-size: 1.4rem; 
+    margin-bottom: 10px;
+}
+
+.appointment-info p {
+    color: #4a5568;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+.appointment-number {
+    font-weight: bold;
+    color: #4a5568;
+    font-size: 1.3rem; 
+}
+
+.master-name {
+    font-weight: 600;
+    font-size: 1.3rem; 
+}
+
+.service-name {
+    background-color: rgba(157, 157, 157, 0.9);
+    color: #fff;
+    padding: 5px 15px; 
+    border-radius: 12px; 
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1rem; 
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+        padding: 0 20px;
+    }
+    
+    .profile-container {
+        gap: 30px;
+    }
+    
+    .left-column, .right-column {
+        min-width: 100%; 
+    }
+    
+    .profile-card, .profile-card2 {
+        min-height: auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .avatar {
+        width: 150px;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .user-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stat {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .appointment-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    header ul {
+        gap: 20px;
+        font-size: 18px;
+        margin: 10px;
+    }
+    
+    .logo {
+        margin-left: 20px;
+        margin-block: 10px;
+        width: 50px;
+    }
+    
+    .user-icon {
+        margin-right: 20px;
+        width: 36px;
+    }
+    
+    body {
+        background-attachment: scroll;
+    }
+    
+    .booking-btn {
+        padding: 18px 25px;
+        font-size: 1.2rem;
+    }
+    
+    .appointment-info h4 {
+        font-size: 1.2rem;
+    }
+    
+    .appointments-header h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.profile-card2 {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}

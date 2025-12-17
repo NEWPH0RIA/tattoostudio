@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="web/css/profile.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="web/img/logo.svg" class="logo" alt="лого"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#block2">О нас</a></li>
+                <li><a href="index.html#block3">Мастера</a></li>
+                <li><a href="index.html#block4">Услуги</a></li>
+                <li><a href="index.html#block5">Контакты</a></li>
+            </ul>
+        </nav>
+        <img src="web/img/User.svg" class="user-icon" alt="профиль">
+    </header>
+
+    <div class="container">
+        <div class="profile-container">
+            <div class="left-column">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="avatar">
+                            <img src="web/img/pfp.png" alt="Аватар пользователя">
+                        </div>
+                        <div class="user-info">
+                            <h2>Фёдор Александрович</h2>
+                            <div class="user-stats">
+                                <div class="stat">
+                                    <div class="stat-value">4</div>
+                                    <div class="stat-label">Записи</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="booking-btn" onclick="window.location.href='order.html'">
+                        <i class="fas fa-calendar-plus"></i> Онлайн запись
+                    </button>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="profile-card2 appointments-list">
+                    <div class="appointments-header">
+                        <h3>Мои записи</h3>
+                        <div class="appointment-count">4 записи</div>
+                    </div>
+
+                    <div class="appointment-item">
+                        <div class="appointment-info">
+                            <h4><span class="appointment-number">Запись 4</span> - <span class="master-name">Мастер
+                                    Александра</span></h4>
+                            <p><strong>Услуга:</strong> <span class="service-name">Татуировка</span></p>
+                            <p><strong>Дата:</strong> 15 октября 2025, 14:30</p>
+                        </div>
+                    </div>
+
+                    <div class="appointment-item">
+                        <div class="appointment-info">
+                            <h4><span class="appointment-number">Запись 3</span> - <span class="master-name">Мастер
+                                    Александра</span></h4>
+                            <p><strong>Услуга:</strong> <span class="service-name">Консультация</span></p>
+                            <p><strong>Дата:</strong> 10 октября 2025, 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="appointment-item">
+                        <div class="appointment-info">
+                            <h4><span class="appointment-number">Запись 2</span> - <span class="master-name">Мастер
+                                    Алёна</span></h4>
+                            <p><strong>Услуга:</strong> <span class="service-name">Консультация</span></p>
+                            <p><strong>Дата:</strong> 5 октября 2025, 13:00</p>
+                        </div>
+                    </div>
+
+                    <div class="appointment-item">
+                        <div class="appointment-info">
+                            <h4><span class="appointment-number">Запись 1</span> - <span class="master-name">Мастер
+                                    Виталий</span></h4>
+                            <p><strong>Услуга:</strong> <span class="service-name">Консультация</span></p>
+                            <p><strong>Дата:</strong> 28 сентября 2025, 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

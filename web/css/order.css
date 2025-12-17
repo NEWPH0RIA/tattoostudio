@@ -1,0 +1,699 @@
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(228, 227, 225, 0.1);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-family: 'Neris';
+    z-index: 999;
+    list-style: none;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neris';
+    font-size: 24px;
+    margin: 20px;
+    list-style: none;
+    gap: 100px;
+    color: black;
+    mix-blend-mode: difference;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.user-icon {
+    width: 44px;
+    padding-right: 60px;
+}
+
+.logo {
+    width: 60px;
+    padding-left: 60px;
+    padding-block: 15px;
+}
+
+
+@font-face {
+    font-family: 'Neris';
+    src: url('../fonts/Neris.otf');
+}
+
+main {
+    background-image: url(../img/orderback.jpg);
+    display: flex;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    
+}
+
+body{
+    background-color: #20201e;
+}
+
+.order1 {
+    border-radius: 30px;
+    background-color: #282828;
+    border-width: 2px;
+    height: 700px;
+    width: 610px;
+    padding: 40px 50px;
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-family: 'Neris';
+    font-size: 24px;
+}
+
+.order-name-title {
+    font-family: 'Neris';
+    font-size: 36px;
+    text-align: center;
+}
+
+.order-step {
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+}
+
+.order-button {
+    color: #5D4D4D;
+    font-family: 'Neris';
+    font-size: 24px;
+    background-color: #F2E9E7;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.order-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Neris';
+    font-size: 16px;
+
+}
+
+
+.order-staff {
+    display: flex;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+
+.booking-window {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#window-step1:checked~#window1,
+#window-step2:checked~#window2,
+#window-step3:checked~#window3,
+#window-step4:checked~#window4 {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+#window-step1:not(:checked)~#window1,
+#window-step2:not(:checked)~#window2,
+#window-step3:not(:checked)~#window3,
+#window-step4:not(:checked)~#window4 {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.window-toggle {
+    display: none;
+}
+
+.booking-window-content {
+    border-radius: 30px;
+    background-color:#e6e6e6;
+    opacity: 70%;
+    border: 2px solid white;
+    width: 100%;
+    max-width: 620px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    height: 620px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.booking-title {
+    font-family: 'Neris';
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.booking-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.booking-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    border: 1px solid #ffffff2d;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: black;
+}
+
+.booking-step:hover {
+    background-color: #282828;
+    opacity: 50%;
+    color: white;
+}
+
+.step-text {
+    font-family: 'Neris';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.step-arrow {
+    font-size: 44px;
+}
+
+.booking-button {
+    color: #dcdcdc;
+    font-family: 'Neris';
+    font-size: 24px;
+    background-color: #444444;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 0;
+}
+
+.booking-button:hover {
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+.custom-accordion {
+    height: 65vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 12px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.custom-accordion::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-accordion .accordion-item {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    font-family: 'Montserrat' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding: 18px 22px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+}
+
+.custom-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.custom-accordion .accordion-body {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    padding: 0 !important;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: black;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item:hover {
+    background-color: #282828;
+    opacity: 50%;
+    color: white;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-name {
+    font-family: 'Neris';
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.service-details {
+    font-family: 'Neris';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+.service-price {
+    font-family: 'Neris';
+    font-size: 20px;
+    margin: 0 20px;
+    min-width: 90px;
+    text-align: right;
+}
+
+.service-item input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #1c1c1c;
+}
+
+.masters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 65vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 12px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.masters-list::-webkit-scrollbar {
+    display: none;
+}
+
+.master-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: black;
+}
+
+.master-item:hover {
+    background-color: #282828;
+    opacity: 50%;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.master-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.master-name {
+    flex: 1;
+    font-family: 'Neris';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.master-item input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #1c1c1c;
+}
+
+.calendar-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Neris';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.calendar-placeholder1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Neris';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.calendar-month {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 65vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 12px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.calendar-container::-webkit-scrollbar {
+    display: none;
+}
+
+.calendar-month {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    color: #1c1c1c;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar-month-name {
+    font-family: 'Neris';
+    font-size: 20px;
+    color: black;
+    padding: 8px 0;
+}
+
+.calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-nav-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    font-family: 'Neris';
+}
+
+.calendar-nav-btn:hover {
+    background-color: #cccccc;
+    opacity: 50%;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.calendar-weekdays div {
+    font-family: 'Neris';
+    font-size: 14px;
+    color: #1c1c1c;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+
+}
+
+.calendar-day {
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.calendar-day div {
+    font-family: 'Neris';
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    z-index: 1;
+}
+
+.calendar-day input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.calendar-day:has(input[type="radio"]:checked) {
+    background-color: #cccccc;
+}
+
+.calendar-day:hover:not(:has(input[type="radio"]:checked)) {
+    background-color: #cccccc;
+    
+}
+
+.calendar-day.today {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+}
+
+.time-selection {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.time-slot {
+    position: relative;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.time-slot div {
+    font-family: 'Neris';
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c1c1c;
+    z-index: 1;
+}
+
+
+
+.time-slot input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.time-slot:has(input[type="radio"]:checked) {
+    background-color: #cccccc;
+    border-color: transparent;
+}
+
+.time-slot:hover:not(:has(input[type="radio"]:checked)) {
+    background-color: #cccccc;
+}
+
+.time-slot.disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.booking-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.booking-modal-content {
+    background: #856F6A;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+    border: 2px solid white;
+}
+
+.booking-modal-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Neris';
+}
+
+.booking-modal-text {
+    margin-bottom: 20px;
+    font-family: 'Neris';
+}
+
+.booking-modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.booking-modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Neris';
+    transition: 0.3s;
+}
+
+.booking-modal-button.confirm {
+    background: #a19797;
+    color: white;
+}
+
+.justify-content-between{
+    display: flex;
+    flex-direction: row;
+    gap: 205px;
+}
