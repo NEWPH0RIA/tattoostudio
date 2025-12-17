@@ -146,7 +146,7 @@ main {
     background-color: #BDBDBD;
     color: black;
     transition: background-color 0.3s ease;
-
+    text-decoration: none;
 }
 
 .sign-in:hover{
