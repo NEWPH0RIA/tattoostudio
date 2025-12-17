@@ -111,7 +111,7 @@ p {
 }
 
 .banner {
-    background-image: url("/web/img/back.png");
+    background-image: url("web/img/back.png");
     height: 2292px;
     background-size: cover;
     gap: 650px;
